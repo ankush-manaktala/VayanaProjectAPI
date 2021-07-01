@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VayanaProjectDataContracts\VayanaProjectDataContracts.csproj" />
+    <ProjectReference Include="..\VayanaProjectServiceContracts\VayanaProjectServiceContracts.csproj" />
+  </ItemGroup>
+
+</Project>
