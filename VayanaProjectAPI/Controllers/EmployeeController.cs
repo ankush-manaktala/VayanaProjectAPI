@@ -21,6 +21,10 @@ namespace VayanaProjectAPI.Controllers
             _service = service;
         }
 
+        /// <summary>
+        /// This method is used to get the departments list.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("GetDepartments")]
         public async Task<ActionResult<List<Department>>> GetDepartments()
         {
@@ -35,6 +39,10 @@ namespace VayanaProjectAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// This method is used to get all the employees details.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("GetEmployees")]
         public async Task<ActionResult<List<EmployeeModel>>> GetEmployees()
         {
@@ -49,6 +57,17 @@ namespace VayanaProjectAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// This method is used to Add/Update Employee data.
+        /// </summary>
+        /// <param name="EmpId"></param>
+        /// <param name="EmpFirstName"></param>
+        /// <param name="EmpMiddleName"></param>
+        /// <param name="EmpLastName"></param>
+        /// <param name="EmpSalary"></param>
+        /// <param name="EmpDeptId"></param>
+        /// <returns></returns>
+
         [HttpGet("AddUpdateEmployee")]
         public async Task AddUpdateEmployee(int EmpId, string EmpFirstName, string EmpMiddleName, string EmpLastName, int EmpSalary, int EmpDeptId)
         {
@@ -62,6 +81,11 @@ namespace VayanaProjectAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// This method is used to delete Employee data.
+        /// </summary>
+        /// <param name="EmpId"></param>
+        /// <returns></returns>
         [HttpGet("DeleteEmployee")]
         public async Task DeleteEmployee(int EmpId)
         {
@@ -75,6 +99,10 @@ namespace VayanaProjectAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// This method is used to get the Average salary per department.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("AvgSalaryByDepartment")]
         public async Task<ActionResult<List<AvgSalaryModel>>> AvgSalaryByDepartment() 
         {
