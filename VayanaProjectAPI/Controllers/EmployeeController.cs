@@ -114,7 +114,6 @@ namespace VayanaProjectAPI.Controllers
             {
                 throw ex;
             }
-            return new List<AvgSalaryModel>();
         }
 
     }
